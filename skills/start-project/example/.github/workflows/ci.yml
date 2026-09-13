@@ -1,0 +1,37 @@
+# TEMPLATE: replace every {{...}}, then delete this line.
+# Neutral CI/CD skeleton for /start-project. Stages: check → build → deploy.
+# The pipeline policy is documented in docs/CI_CD.md; the deploy target in docs/DEPLOYMENT.md.
+name: ci
+
+on:
+  push:
+    branches: ["{{main}}"]
+  pull_request:
+
+jobs:
+  check:                       # the merge gate, must be green to merge
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: set up {{language}}
+        run: {{set up runtime + package manager}}
+      - run: {{install dependencies}}
+      - run: {{lint}}
+      - run: {{type-check}}
+      - run: {{test}}
+
+  build:                       # only after checks pass
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: {{build / bundle / docker build}}
+
+  deploy:                      # only on the default branch
+    needs: build
+    if: github.ref == 'refs/heads/{{main}}'
+    runs-on: ubuntu-latest
+    # environment + secrets: see docs/DEPLOYMENT.md
+    steps:
+      - uses: actions/checkout@v4
+      - run: {{deploy command, target-specific}}

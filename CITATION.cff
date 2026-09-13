@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Agentic Engineering: A Docs Template for AI Coding Agents"
+version: "2.0.0"
+date-released: "2026-07-19"
+authors:
+  - family-names: "Diamant"
+    given-names: "Nir"
+repository-code: "https://github.com/NirDiamant/Agentic_Engineering"
+url: "https://github.com/NirDiamant/Agentic_Engineering"
+abstract: >-
+  A copy-ready docs/ layer for AI coding agents: the files an agent reads
+  before it writes code. Ships a lean root CLAUDE.md that wires the layer
+  into context, templates for OVERVIEW.md, ARCHITECTURE.md, TECH_STACK.md,
+  CONVENTIONS.md, DESIGN.md and HANDOFFS.md, and a running context log. The
+  /apply command researches a real repository, plans the layer with the
+  developer, writes it from the codebase, and has a separate evaluator
+  agent verify the result against the files.
+keywords:
+  - agentic-engineering
+  - spec-driven-development
+  - context-engineering
+  - claude-md
+  - agents-md
+  - ai-coding-agents
+  - claude-code
+  - developer-tools
+  - templates
+license: Apache-2.0

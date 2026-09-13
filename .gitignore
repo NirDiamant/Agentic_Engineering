@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+marketing/
+
+# An internal planning note. It names a colleague and his position on an
+# unresolved disagreement, and it is not the kit. Kept on disk, out of the repo.
+notes/docs-doctrine.md
