@@ -1,0 +1,46 @@
+# Agentic Engineering
+
+> A copy-ready docs layer for AI coding agents: the small set of files an agent reads before it writes code, so it stops guessing at project decisions that were never written down. One paste points an agent at RUN.md and it writes the layer from the real codebase in about fifteen minutes, then grades itself with a five-question memory check answered before and after. Ships templates for OVERVIEW, ARCHITECTURE, TECH_STACK, CONVENTIONS, DESIGN and HANDOFFS, a lean root instruction file, five packaged agent skills, and an evaluation harness. Note that the CLAUDE.md at the repository root is a template shipped into other repositories, not this repository's own configuration. Authored by Nir Diamant. Licensed Apache 2.0.
+
+## Core Documents
+
+- [README](https://github.com/NirDiamant/Agentic_Engineering/blob/main/README.md): What the layer is, the fifteen-minute run, and the scorecard it produces.
+- [RUN.md](https://github.com/NirDiamant/Agentic_Engineering/blob/main/RUN.md): The procedure an agent follows to apply the kit to a target repository.
+- [AGENTS](https://github.com/NirDiamant/Agentic_Engineering/blob/main/AGENTS.md): Conventions for agents working inside this repository.
+- [CLAUDE.md](https://github.com/NirDiamant/Agentic_Engineering/blob/main/CLAUDE.md): The root instruction-file template installed into a target repo. A template, not this repo's config.
+- [CITATION.cff](https://github.com/NirDiamant/Agentic_Engineering/blob/main/CITATION.cff): Citation metadata.
+- [LICENSE](https://github.com/NirDiamant/Agentic_Engineering/blob/main/LICENSE): Apache 2.0.
+
+## The Docs Layer Templates
+
+- [docs/README](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/README.md): How the layer fits together.
+- [OVERVIEW](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/OVERVIEW.md): What the project is and why it exists.
+- [ARCHITECTURE](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/ARCHITECTURE.md): How the system is put together.
+- [TECH_STACK](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/TECH_STACK.md): What is installed, what is only planned, and why each choice was made.
+- [CONVENTIONS](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/CONVENTIONS.md): The rules the codebase actually follows.
+- [DESIGN](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/DESIGN.md): Design decisions and their rationale.
+- [HANDOFFS](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/HANDOFFS.md): The append-only log that carries context between sessions.
+- [why_this_works](https://github.com/NirDiamant/Agentic_Engineering/blob/main/docs/why_this_works.md): The reasoning behind the layer's structure.
+- [docs/context](https://github.com/NirDiamant/Agentic_Engineering/tree/main/docs/context): The running context files.
+
+## Packaged Skills
+
+- [skills/README](https://github.com/NirDiamant/Agentic_Engineering/blob/main/skills/README.md): What the bundled skills do.
+- [spark](https://github.com/NirDiamant/Agentic_Engineering/tree/main/skills/spark): Turning an idea into a specified project.
+- [start-project](https://github.com/NirDiamant/Agentic_Engineering/tree/main/skills/start-project): Bootstrapping a new repository with the layer in place.
+- [docs-gardener](https://github.com/NirDiamant/Agentic_Engineering/tree/main/skills/docs-gardener): Keeping the docs layer from drifting away from the code.
+- [tester](https://github.com/NirDiamant/Agentic_Engineering/tree/main/skills/tester): Test authoring support.
+- [testify](https://github.com/NirDiamant/Agentic_Engineering/tree/main/skills/testify): Test generation and verification.
+
+## Evaluation
+
+- [eval](https://github.com/NirDiamant/Agentic_Engineering/tree/main/eval): The five-question memory check, the evaluator agent and the scorecard the run prints.
+
+## Related work by the same author
+
+- [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents): 59 notebooks implementing GenAI agents.
+- [agents-towards-production](https://github.com/NirDiamant/agents-towards-production): Taking agents from prototype to deployed product.
+- [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques): 41 notebooks on Retrieval-Augmented Generation.
+- [Course, Prompt to Production](https://diamant-ai.com/courses): Building software with AI, taught systematically.
+- [Newsletter](https://newsletter.diamant-ai.com): Weekly deep dives on GenAI engineering.
+- [Community Discord](https://discord.gg/cA6Aa4uyDX): Questions, contributions and discussion.
