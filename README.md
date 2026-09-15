@@ -1,8 +1,8 @@
 <h1 align="center">Agentic Engineering</h1>
 
 <p align="center">
-  <b>Your coding agent starts every session from zero.</b><br>
-  This gives it a memory of your project: a small <code>docs/</code> layer that one paste writes from your real code, in about fifteen minutes.
+  <b>Your coding agent starts every session from zero, and you never see what it got wrong.</b><br>
+  This finds out. It asks your agent five questions about your repo, cold, writes a small <code>docs/</code> layer from your real code, then asks the same five again and prints the score.
 </p>
 
 <p align="center">
@@ -95,6 +95,8 @@ When you stop for the day: *"update docs/context/CONTINUE_PROMPT.md with where w
 Your agent reads these files and tries to follow them. Nothing forces it. A rule that has to hold every single time belongs in a hook, a test, or a CI gate, and none of that ships here. Those layers are where the full method lives.
 
 The final check is one model checking another. It catches empty placeholders and docs that contradict the code. It can't tell you the docs are true.
+
+**And it checks itself best in Claude Code.** The after score is meant to be answered by a fresh reader, which means a sub-agent. Claude Code has them. Codex, Cursor and Copilot do not, so there the same session that wrote the files also grades them, and your card says so on its own line. Treat what you get in those tools as a first draft and read it before you trust it. A first draft of this carries real errors, and a confident wrong file is worse than no file.
 
 ---
 
