@@ -6,6 +6,11 @@
 </p>
 
 <p align="center">
+  The kit is one layer of the method I teach in <b>Prompt to Production</b>.
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-free-module-top&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-top&retarget=0&text=course-free-module-top"><b>One full module is free.</b></a>
+</p>
+
+<p align="center">
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" alt="License: Apache 2.0"></a>
   <a href="https://github.com/NirDiamant/Agentic_Engineering/stargazers"><img src="https://img.shields.io/github/stars/NirDiamant/Agentic_Engineering?style=social" alt="GitHub Stars"></a>
   <a href="https://github.com/NirDiamant/Agentic_Engineering/issues"><img src="https://img.shields.io/github/issues/NirDiamant/Agentic_Engineering" alt="Issues"></a>
