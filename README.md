@@ -26,6 +26,8 @@ Your agent can read your code. It can't read the decisions behind it. Where does
 
 So you write those decisions down where the agent will read them. By hand that's an afternoon per repo. This does it from your real code instead.
 
+> **Not a [Spec Kit](https://github.com/github/spec-kit) replacement.** Spec Kit writes a spec, then builds the code from it. This reads the code you already have and writes the memory your agent is missing. Use both.
+
 ## Run it
 
 Paste this to the agent already working in your repo:
