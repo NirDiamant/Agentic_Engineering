@@ -106,15 +106,19 @@ The final check is one model checking another. It catches empty placeholders and
 
 **Prompt to Production** is my course on building software with AI the way professionals do: the methods and paradigms behind reliable, efficient, modular production systems, taught systematically. Every module pairs a video lecture with a hands-on lab, from your first structured prompt to a working production system. The hooks, tests and CI gates this kit leaves out are in there.
 
-### 🎁 Try a full module, free
+### 🎁 Try it on your own repo, free
+
+Your coding agent starts every session knowing nothing about your project, so it guesses. Paste one line into the agent you already have open, and about fifteen minutes later your repository has a docs layer written from the code itself, plus a card scoring what your agent knew before and after.
 
 <table>
 <tr>
-<td align="center">🎬<br><b>Video<br>lecture</b></td>
-<td align="center">🛠️<br><b>Hands-on<br>lab</b></td>
-<td align="center">✅<br><b>Acceptance<br>criteria</b></td>
+<td align="center">📋<br><b>One line,<br>your own repo</b></td>
+<td align="center">⏱️<br><b>About fifteen<br>minutes</b></td>
+<td align="center">🏷️<br><b>A card that<br>scores your agent</b></td>
 </tr>
 </table>
+
+The last two people who ran it posted their cards: **0 of 5 → 5 of 5** and **3 of 5 → 4 of 5**, on five questions about their own codebase. No signup.
 
 <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-free-module-direct&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Flectures%2F00-present%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-direct&retarget=0&text=course-free-module-direct"><img src="images/free-module-button.svg" alt="Claim your free module" width="420"></a>
 
