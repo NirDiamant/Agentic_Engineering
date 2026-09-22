@@ -25,7 +25,7 @@ The measurable claim is the point: the agent answers five questions about the re
 | `RUN.md` | The procedure an agent follows to apply the kit to a target repository. The operational heart of the repo. |
 | `CLAUDE.md` | The root instruction-file template that gets installed into a target repo. A template, not this repo's own config. |
 | `docs/` | The templates for the layer: `OVERVIEW.md`, `ARCHITECTURE.md`, `TECH_STACK.md`, `CONVENTIONS.md`, `DESIGN.md`, `HANDOFFS.md`, plus `context/` and `why_this_works.md`. |
-| `skills/` | Packaged agent skills shipped with the kit: `spark`, `start-project`, `docs-gardener`, `tester`, `testify`. |
+| `skills/` | Packaged agent skills shipped with the kit and loaded by the plugin: `start-project`, `docs-gardener`, `tester`, `testify`. `spark` is in `skills-experimental/` (needs two skills that do not ship here). |
 | `eval/` | The self-grading harness, the five-question check and the scorecard. |
 | `CITATION.cff` | Citation metadata. |
 | `images/` | Diagrams used in the README and tutorial. |

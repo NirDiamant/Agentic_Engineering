@@ -1,0 +1,23 @@
+{
+  "name": "agentic-engineering",
+  "displayName": "Agentic Engineering: give your repo a memory",
+  "version": "1.0.0",
+  "description": "Your coding agent starts every session knowing nothing about your project. /agent-memory reads your real code, writes CLAUDE.md and a small docs layer from it, grades the repo 0 to 5 before and after, and lists the claims in your own docs that the code contradicts. Deletes nothing, overwrites nothing, stops once for approval.",
+  "author": {
+    "name": "Nir Diamant",
+    "url": "https://github.com/NirDiamant"
+  },
+  "homepage": "https://github.com/NirDiamant/Agentic_Engineering",
+  "repository": "https://github.com/NirDiamant/Agentic_Engineering",
+  "license": "Apache-2.0",
+  "keywords": [
+    "claude-md",
+    "agent-memory",
+    "context",
+    "docs",
+    "project-setup",
+    "onboarding",
+    "codebase",
+    "scorecard"
+  ]
+}

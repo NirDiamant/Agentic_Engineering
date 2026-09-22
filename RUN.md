@@ -75,6 +75,14 @@ Still advisory: nothing enforces these rules. That takes hooks, tests, CI.
 
 `<k>` is however many files you wrote under `docs/`; the root instruction file fills the `<root file>` slot and is not one of them. `<u>` is how many `<!-- unconfirmed:` markers you left behind, counting that exact opening string. The contradictions number is how many entries you recorded under `Contradictions in your existing docs` in `docs/context/log.md`: claims of theirs that this tree disproves, each with the file and line. Zero is an honest and common answer, and the line prints either way. Do not round a score, do not add a line, do not drop the last one.
 
+Then, under the card, offer the badge. Print this one line with `<after>` replaced by the after score (a single digit, 0 to 5), and say it is theirs to paste into their README if they want the repo to carry the score:
+
+```
+[![agent memory <after> of 5](https://p2p-course.diamant-ai.com/badge/agent-memory/<after>-of-5.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--badge&click=badge-<after>&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgentic_Engineering&retarget=0&text=badge-<after>)
+```
+
+You do not edit their README yourself; that is their file and step 1 promised you would not touch it.
+
 ## 7. Offer the airtight pass
 
 Close with this: the layer was checked by you alone. `/apply-airtight` runs the same procedure with a wider sample, all nine docs, and one fresh evaluator that reads every claim back against the code.

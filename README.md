@@ -36,6 +36,14 @@ Paste this to the agent already working in your repo:
 Clone https://github.com/NirDiamant/Agentic_Engineering into a temp folder, read its RUN.md, and follow it on this repository.
 ```
 
+That line works in Claude Code, Codex, Cursor and any agent that can clone and read. In Claude Code it is also a plugin, so the run is a slash command and updates arrive on their own:
+
+```
+/plugin marketplace add NirDiamant/Agentic_Engineering
+/plugin install agentic-engineering@diamantai
+/agent-memory
+```
+
 What it promises you:
 
 - It writes `docs/`, one instruction file at your repo root (plus a one-line pointer if your tools need the other name), a scorecard beside it, and the kit's two commands into `.claude/commands/`. Nothing else changes.
@@ -67,6 +75,10 @@ code disproves: two tools named in the spec that no package installs, a schedule
 spec never chose doing the work, an upload the docs call unbuilt that shipped. Zero is
 a normal answer on a repo whose docs are current.
 
+The run ends by offering a badge for your README, so the repo carries the score and the link back here:
+
+[![agent memory 5 of 5](https://p2p-course.diamant-ai.com/badge/agent-memory/5-of-5.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--badge&click=badge-readme&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgentic_Engineering&retarget=0&text=badge-readme)
+
 ## What goes into your repo
 
 ![CLAUDE.md is read every turn, the docs folder loads on demand](images/tutorial/whats-inside.jpg)
@@ -88,7 +100,7 @@ When you stop for the day: *"update docs/context/CONTINUE_PROMPT.md with where w
 
 ## No code yet?
 
-[`/start-project`](skills/start-project/SKILL.md) builds the same layer for a stack you've already chosen, plus `SETUP.md`, `DEPLOYMENT.md`, `CI_CD.md` and `TESTING.md`. [`/spark`](skills/spark/SKILL.md) is for when it's still an idea: experimental, and it needs two skills that don't ship here, `/harness-plan` and `/harness-unleash`. Both are skills, so they need [one extra step](skills/README.md) to install. The reasoning under all of it is in [`docs/why_this_works.md`](docs/why_this_works.md).
+[`/start-project`](skills/start-project/SKILL.md) builds the same layer for a stack you've already chosen, plus `SETUP.md`, `DEPLOYMENT.md`, `CI_CD.md` and `TESTING.md`. [`/spark`](skills-experimental/spark/SKILL.md) is for when it's still an idea: experimental, and it needs two skills that don't ship here, `/harness-plan` and `/harness-unleash`. `/start-project` and the other skills ship inside the plugin; `/spark` lives in `skills-experimental/` and needs [one extra step](skills/README.md) to install. The reasoning under all of it is in [`docs/why_this_works.md`](docs/why_this_works.md).
 
 ## What this doesn't do
 
