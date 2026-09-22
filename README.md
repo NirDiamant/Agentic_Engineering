@@ -79,6 +79,30 @@ The run ends by offering a badge for your README, so the repo carries the score 
 
 [![agent memory 5 of 5](https://p2p-course.diamant-ai.com/badge/agent-memory/5-of-5.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--badge&click=badge-readme&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgentic_Engineering&retarget=0&text=badge-readme)
 
+## A whole team at once
+
+If you run a team, the number you want is not one repository. Point this at the folder your repositories are cloned into and it reads each of them cold, the same five questions, and prints one card:
+
+```
+Clone https://github.com/NirDiamant/Agentic_Engineering into a temp folder, read its ORG.md, and follow it on this folder of repositories.
+```
+
+In Claude Code that is `/org-card <folder>`.
+
+```
+ORG MEMORY CHECK: orgtest
+Repos read:              3
+Scoring 2 or below:      3 of 3
+Guessing most about:     what naming or code convention a reviewer here would flag first
+Instruction files:       0 of 3 repos have one
+Contradictions on sight: 0
+Rules enforced:          0 (nothing here checks a hook, a test or CI; that is the course)
+```
+
+A real run, on `click`, `requests` and `fastapi` cloned into one folder, 2026-09-22. All three are excellent libraries and all three scored 1 of 5, because a README tells an agent what the library is for and nothing about where a new file goes, why this dependency and not the obvious one, or what a change must never break. That is the point of the number: it is not a quality score, it is how much your agent is filling in from its training data.
+
+That read writes nothing inside any repository. It is a measurement, and it runs on your machine, so no code leaves it. Full procedure: [`ORG.md`](ORG.md).
+
 ## What goes into your repo
 
 ![CLAUDE.md is read every turn, the docs folder loads on demand](images/tutorial/whats-inside.jpg)
