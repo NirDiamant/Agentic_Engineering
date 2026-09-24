@@ -32,4 +32,4 @@ Everything you write goes into the target repository, never into the plugin fold
 
 ## Clean up
 
-If you cloned the kit into `<their-repo>/.agentic-engineering-kit`, delete that folder after step 7 and say so. It is the kit's own clone, which RUN.md allows you to remove; it is the only thing you delete. Never add it to their `.gitignore` and never commit anything.
+If you cloned the kit into `<their-repo>/.agentic-engineering-kit`, delete that folder after step 7 and say so, before you print step 7's last line: that line stays the last thing you print. It is the kit's own clone, which RUN.md allows you to remove; it is the only thing you delete. Never add it to their `.gitignore` and never commit anything.

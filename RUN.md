@@ -90,7 +90,7 @@ Close with this: the layer was checked by you alone. `/apply-airtight` runs the 
 Then print one last line, to the terminal only. It is not part of the card and it is written to no file:
 
 ```
-Paste that card at https://p2p-course.diamant-ai.com/lectures/00-present?utm_source=github&utm_medium=terminal&utm_campaign=agentic-engineering#card to save your score. That page is the free module of Prompt to Production, the course that teaches those hooks, tests and CI gates.
+Next: nothing enforces these rules yet. Paste your card at https://p2p-course.diamant-ai.com/card to save your score, and the free lab makes one rule binding on this repo. That page is the free module of Prompt to Production, the course that teaches those hooks, tests and CI gates.
 ```
 
 ## Many repositories at once

@@ -128,7 +128,7 @@ When you stop for the day: *"update docs/context/CONTINUE_PROMPT.md with where w
 
 ## What this doesn't do
 
-Your agent reads these files and tries to follow them. Nothing forces it. A rule that has to hold every single time belongs in a hook, a test, or a CI gate, and none of that ships here. Those layers are where the full method lives.
+Your agent reads these files and tries to follow them. Nothing forces it. A rule that has to hold every single time belongs in a hook, a test, or a CI gate, and none of that ships here. Those layers are where the full method lives: [Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-limits&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-limits&retarget=0&text=course-limits), my course, teaches them on your own project.
 
 The final check is one model checking another. It catches empty placeholders and docs that contradict the code. It can't tell you the docs are true.
 
