@@ -1,7 +1,7 @@
 {
   "name": "agentic-engineering",
   "displayName": "Agentic Engineering: give your repo a memory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Your coding agent starts every session knowing nothing about your project. /agent-memory reads your real code, writes CLAUDE.md and a small docs layer from it, grades the repo 0 to 5 before and after, and lists the claims in your own docs that the code contradicts. Deletes nothing, overwrites nothing, stops once for approval.",
   "author": {
     "name": "Nir Diamant",

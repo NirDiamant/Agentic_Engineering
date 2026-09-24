@@ -1,12 +1,12 @@
 ---
 name: org-card
-description: One card for a whole team. Points at a folder of repositories, reads each one cold (the same five questions the single-repo check asks), and prints one org card: how many repos score 2 or below, what your agents guess about most, how many claims in your docs the root listing already disproves. Read-only, writes nothing inside any repository. About two minutes per repo.
+description: One card for a whole team. Points at a folder of repositories, or at a shared monorepo with --owner to read only that team's folders, reads each one cold (the same five questions the single-repo check asks), and prints one org card: how many repos score 2 or below, what your agents guess about most, how many claims in your docs the root listing already disproves. Read-only, writes nothing inside any repository. About two minutes per repo.
 tags: [claude-md, memory, docs, org, audit]
 ---
 
 You are running the Agentic Engineering kit's **org read** across a folder of repositories.
 
-The folder is `$ARGUMENTS` if it names one, else the current working directory. If `$ARGUMENTS` names repositories rather than a folder, those are the list and their common parent is the folder.
+The folder is `$ARGUMENTS` if it names one, else the current working directory. If `$ARGUMENTS` names repositories or folders rather than one folder, those are the list and their common parent is the folder. If the folder is itself one large shared repository, `ORG.md` step 2 reads the team's own folders inside it: pass `--owner <handle>` to take them from CODEOWNERS, for example `/org-card . --owner @acme/payments`.
 
 ## Find the kit's files
 

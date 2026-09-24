@@ -10,7 +10,7 @@
       "name": "agentic-engineering",
       "source": "./",
       "description": "Give your repo a memory: CLAUDE.md and a docs layer written from the real code, scored 0 to 5 before and after.",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "development",
       "keywords": [
         "claude-md",

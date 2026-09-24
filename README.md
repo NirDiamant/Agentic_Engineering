@@ -103,6 +103,14 @@ A real run, on `click`, `requests` and `fastapi` cloned into one folder, 2026-09
 
 That read writes nothing inside any repository. It is a measurement, and it runs on your machine, so no code leaves it. Full procedure: [`ORG.md`](ORG.md).
 
+**One big repository that many teams share?** A score for the whole monorepo measures everybody else's code too. Point it at the monorepo with your team's CODEOWNERS handle and it reads only your folders, each one as if it were a repository of its own:
+
+```
+/org-card . --owner @your-org/your-team
+```
+
+Without `--owner` it reads the packages your workspace manifest declares, and you can always name the folders yourself. On `backstage`, `--owner @backstage/techdocs-maintainers` found that team's 10 folders and scored 4 of the 10 at 2 or below, although every one of them inherits the repository's `AGENTS.md`. A root instruction file tells the agent how the monorepo works. It does not tell it where a new file goes in your plugin, or why your team picked the tool it did.
+
 ## What goes into your repo
 
 ![CLAUDE.md is read every turn, the docs folder loads on demand](images/tutorial/whats-inside.jpg)
