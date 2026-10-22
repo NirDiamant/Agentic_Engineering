@@ -54,4 +54,4 @@ Formal citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 - Newsletter: https://newsletter.diamant-ai.com
 - Community: https://discord.gg/cA6Aa4uyDX
-- Course, Prompt to Production: https://diamant-ai.com/courses
+- Book, AI Agents Made Simple: https://www.amazon.com/dp/B0HNXRSRH2
