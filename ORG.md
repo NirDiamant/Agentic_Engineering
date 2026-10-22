@@ -110,7 +110,7 @@ Scoring 2 or below:      <N> of <M>
 Guessing most about:     <the question that was WOULD-HAVE-TO-LOOK most often, in words>
 Instruction files:       <k> of <M> repos have one
 Contradictions on sight: <c>
-Rules enforced:          0 (nothing here checks a hook, a test or CI; that is the course)
+Rules enforced:          0 (nothing here checks a hook, a test or CI)
 ```
 
 For a folder unit, the Repository cell is `<repository>/<path to the folder>`, and the Instruction file cell names the nearest one it loads, with `(from <folder>)` after it when it sits above the unit.

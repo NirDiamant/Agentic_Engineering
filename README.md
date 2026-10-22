@@ -6,11 +6,6 @@
 </p>
 
 <p align="center">
-  The kit is one layer of the method I teach in <b>Prompt to Production</b>.
-  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-free-module-top&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-top&retarget=0&text=course-free-module-top"><b>One full module is free.</b></a>
-</p>
-
-<p align="center">
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" alt="License: Apache 2.0"></a>
   <a href="https://github.com/NirDiamant/Agentic_Engineering/stargazers"><img src="https://img.shields.io/github/stars/NirDiamant/Agentic_Engineering?style=social" alt="GitHub Stars"></a>
   <a href="https://github.com/NirDiamant/Agentic_Engineering/issues"><img src="https://img.shields.io/github/issues/NirDiamant/Agentic_Engineering" alt="Issues"></a>
@@ -79,6 +74,23 @@ The run ends by offering a badge for your README, so the repo carries the score 
 
 [![agent memory 5 of 5](https://p2p-course.diamant-ai.com/badge/agent-memory/5-of-5.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--badge&click=badge-readme&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgentic_Engineering&retarget=0&text=badge-readme)
 
+## Six repos, before and after
+
+We ran it on six repositories you already depend on. Each one was asked five questions about itself, cold, then again after the layer was written. The last column counts statements in that project's **own documentation** that its **own code disproves**:
+
+| repo | before | after | own docs its code disproves |
+|---|---|---|---|
+| fastapi | 2 of 5 | **5 of 5** | 2 |
+| flask | 3 of 5 | **5 of 5** | 6 |
+| django | 3 of 5 | **4 of 5** | 1 |
+| express | 2 of 5 | **4 of 5** | 4 |
+| requests | 2 of 5 | **4 of 5** | 0 |
+| langchain | 5 of 5 | **4 of 5** | 5 |
+
+Flask's six include four documentation examples that raise `TypeError` when you run them. Langchain scored *lower* afterwards, because it already ships a 380-line agent instruction file and the cold read was grading theirs; that row is in the table anyway.
+
+Clone any of those repos, paste the line from [Run it](#run-it), and check the number yourself. No signup.
+
 ## A whole team at once
 
 If you run a team, the number you want is not one repository. Point this at the folder your repositories are cloned into and it reads each of them cold, the same five questions, and prints one card:
@@ -96,7 +108,7 @@ Scoring 2 or below:      3 of 3
 Guessing most about:     what naming or code convention a reviewer here would flag first
 Instruction files:       0 of 3 repos have one
 Contradictions on sight: 0
-Rules enforced:          0 (nothing here checks a hook, a test or CI; that is the course)
+Rules enforced:          0 (nothing here checks a hook, a test or CI)
 ```
 
 A real run, on `click`, `requests` and `fastapi` cloned into one folder, 2026-09-22. All three are excellent libraries and all three scored 1 of 5, because a README tells an agent what the library is for and nothing about where a new file goes, why this dependency and not the obvious one, or what a change must never break. That is the point of the number: it is not a quality score, it is how much your agent is filling in from its training data.
@@ -136,7 +148,7 @@ When you stop for the day: *"update docs/context/CONTINUE_PROMPT.md with where w
 
 ## What this doesn't do
 
-Your agent reads these files and tries to follow them. Nothing forces it. A rule that has to hold every single time belongs in a hook, a test, or a CI gate, and none of that ships here. Those layers are where the full method lives: [Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-limits&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-limits&retarget=0&text=course-limits), my course, teaches them on your own project.
+Your agent reads these files and tries to follow them. Nothing forces it. A rule that has to hold every single time belongs in a hook, a test, or a CI gate, and none of that ships here. My book [AI Agents Made Simple](#-go-deeper-the-book) covers that layer: hooks the model cannot skip, guardrails, and the harness around a coding agent.
 
 The final check is one model checking another. It catches empty placeholders and docs that contradict the code. It can't tell you the docs are true.
 
@@ -144,32 +156,15 @@ The final check is one model checking another. It catches empty placeholders and
 
 ---
 
-<h2 align="center">🎓 From a docs layer to production</h2>
+## 📖 Go deeper: the book
 
 <div align="center">
 
-**Prompt to Production** is my course on building software with AI the way professionals do: the methods and paradigms behind reliable, efficient, modular production systems, taught systematically. Every module pairs a video lecture with a hands-on lab, from your first structured prompt to a working production system. The hooks, tests and CI gates this kit leaves out are in there.
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=book-card-agents-image&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HNXRSRH2&retarget=0&text=book-card-agents-image"><img src="images/ai-agents-made-simple-cover.jpg" alt="AI Agents Made Simple book cover" width="180"></a>
 
-### 🎁 Try it on your own repo, free
+**AI Agents Made Simple** - the decision guide to building agents that work: 28 chapters on what each pattern does, what breaks, what it costs, and when it is overkill. No code.
 
-Your coding agent starts every session knowing nothing about your project, so it guesses. Paste one line into the agent you already have open, and about fifteen minutes later your repository has a docs layer written from the code itself, plus a card scoring what your agent knew before and after.
-
-We ran it on six repositories you already depend on. Each one was asked five questions about itself, cold, then again after the layer was written. The last column counts statements in that project's **own documentation** that its **own code disproves**:
-
-| repo | before | after | own docs its code disproves |
-|---|---|---|---|
-| fastapi | 2 of 5 | **5 of 5** | 2 |
-| flask | 3 of 5 | **5 of 5** | 6 |
-| django | 3 of 5 | **4 of 5** | 1 |
-| express | 2 of 5 | **4 of 5** | 4 |
-| requests | 2 of 5 | **4 of 5** | 0 |
-| langchain | 5 of 5 | **4 of 5** | 5 |
-
-Flask's six include four documentation examples that raise `TypeError` when you run them. Langchain scored *lower* afterwards, because it already ships a 380-line agent instruction file and the cold read was grading theirs; that row is in the table anyway.
-
-Clone any of those repos, paste the same line, and check the number yourself. No signup.
-
-<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=course-free-module-direct&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Flectures%2F00-present%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dagentic-engineering-direct&retarget=0&text=course-free-module-direct"><img src="images/free-module-button.svg" alt="Claim your free module" width="420"></a>
+**[Get it on Amazon →](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=book-card-agents-cta&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HNXRSRH2&retarget=0&text=book-card-agents-cta)**
 
 </div>
 
@@ -199,6 +194,13 @@ More open-source guides:
 <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=related-genai-agents&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FGenAI_Agents&retarget=0&text=related-genai-agents">Agents</a> ·
 <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=related-prompt-engineering&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FPrompt_Engineering&retarget=0&text=related-prompt-engineering">Prompting</a> ·
 <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=related-agent-memory-techniques&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgent_Memory_Techniques&retarget=0&text=related-agent-memory-techniques">Agent memory</a>
+</p>
+
+<p align="center">
+More books by the same author:
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=book-footer-rag&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0GWDH8JJL&retarget=0&text=book-footer-rag">RAG Made Simple</a> ·
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=book-footer-pe&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5&retarget=0&text=book-footer-pe">Prompt Engineering</a> ·
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=agentic-engineering--readme&click=book-footer-am&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HCRMGHCM&retarget=0&text=book-footer-am">Agent Memory Made Simple</a>
 </p>
 
 <p align="center"><sub>If this saved you a session of re-explaining your project, a star helps other people find it.</sub></p>
